@@ -10,7 +10,7 @@ genai.configure(api_key=GOOGLE_API_KEY)
 model = genai.GenerativeModel('gemini-pro')
 
 stack=input("Enter tech stack: ")
-response = model.generate_content("Generate a dockerfile for the following techstack: " + stack + ", Just give the contents of the dockerfile and nothing else.")
+response = model.generate_content("Generate a Dockerfile, Use a base image, install essential dependencies, copy application code, expose default ports, and provide a command to start the service. don't write comments. Here's the tech stack: " + stack)
 
 f = open("Dockerfile", "x")
 f.write(response.text)

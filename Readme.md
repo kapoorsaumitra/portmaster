@@ -23,7 +23,7 @@ pip install python-dotenv google-generativeai
 
 1. Clone the repository
 2. Install the prerequisites
-3. Create a .env file with your Google API key: 
+3. Create a .env file with your [Google API key](https://makersuite.google.com/app/apikey) (Gemini): 
 
 ```bash
 echo GOOGLE_API_KEY=your_api_key > .env
